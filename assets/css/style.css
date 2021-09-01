@@ -1,0 +1,451 @@
+/* reset css*/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-family: Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
+}
+
+/*
+1. lam tu tren xuong duoi
+2. lam tu ngoai vao trong
+3. tong quan den chi tiet
+ */
+/* 
+1.Vi tri
+2. kich thuoc(width, height)
+3. color
+4.kieu dang( kieu chu, hinhf tronf, vuong,..)
+*/
+/* commom */
+.text-center{
+    text-align: center !important; 
+}
+
+.row{
+    margin-left: -8px;
+    margin-right: -8px;
+    
+}
+
+.col{
+
+    float: left;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.col-third{
+    width: 33.33333%;
+    
+
+}
+
+.col-half{
+    width: 50%;
+}
+
+.col-full{
+    width: 100%;
+
+}
+
+.text-white{
+    color: #fff !important;
+}
+
+.mt8{
+    margin-top: 8px;
+}
+
+.mt16{
+    margin-top: 16px;
+}
+
+.row::after{
+    content: " ";
+    display: block;
+    clear: both;
+}
+/* end commom */
+
+#main{
+
+}
+
+
+#header{
+    height: 46px;
+    background-color: #000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    
+}
+
+#nav{
+    display: inline-block;
+}
+
+#nav, .subnav{
+    list-style-type: none;
+}
+
+#nav >li {
+    display: inline-block;
+    position: relative;
+}
+
+#nav >li:first-child{
+    display: inline-block;
+}
+
+#nav >li >a{
+    padding: 0 24px;
+    line-height: 46.3px;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+#nav li a{
+    text-decoration: none;
+    padding: 0 24px;
+    display: block;
+}
+
+#nav >li:hover >a,
+#nav .subnav li:hover a{
+    background-color: #ccc;
+    color: #000;  
+}
+
+
+#nav .subnav{
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    min-width: 160px;
+    line-height: 38.4px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    top:100%;
+    left: 0;
+}
+
+#nav .subnav a{
+    padding: 0 12px; 
+    color: #000;  
+}
+
+#nav li:hover .subnav{
+    display: block;
+}
+
+#nav .nav-arrow-down{
+    font-size: 14px;
+}
+
+#header .mobile-menu-btn{
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: none;
+}
+
+#header .mobile-menu-btn,
+#header .search-btn{
+    float: right;
+    padding: 12.4px 22px; 
+}
+
+#header .menu-icon,
+#header .search-icon{
+    font-size: 18.7px;
+    color: #fff;
+}
+
+#header .search-btn:hover{
+    background-color: #f44336;
+    cursor: pointer;
+}
+
+#header .mobile-menu-btn:hover{
+    background-color: #ccc;
+}
+
+#header .mobile-menu-btn:hover .menu-icon{
+    color: #000;
+}
+
+#slider{
+    padding-top: 50%;
+    margin-top: 46px ;
+    background: url(../img/Slider/slider1.jpg) no-repeat top center / cover;
+    color: #fff;
+    position: relative;
+}   
+
+#slider .text-content{
+    position: absolute;
+    bottom: 48px;
+    width: 100%;
+    text-align: center;
+}
+
+#slider .text-heading{
+    font-weight: 500;
+    font-size: 24px;
+}
+
+#slider .text-decription{
+    font-size: 15px;
+    margin-top: 25px;
+    font-weight: 700;
+    text-shadow: 0 0 4px #000;
+}
+
+#content{
+
+
+}
+
+#content .content-section{
+    width: 800px;
+    max-width: 100%;
+    padding: 64px 16px 112px;
+    /* box-sizing: border-box; */
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+#content .section-heading{
+
+    text-align: center;
+    font-size: 30px;
+    font-weight: 400;
+    letter-spacing: 4px;
+    margin-top: 10px;
+    line-height:40px
+}
+
+#content .section-sub-heading{
+    text-align: center;
+    font-size: 15px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-style: italic;
+    opacity: 0.6;
+}
+
+#content .about-text{
+    font-size: 15px;
+    text-align: justify;
+    line-height: 1.4;
+    margin-bottom: 15px;
+}
+
+#content .member-list{
+    margin-top: 32px;
+    
+}
+
+#content .member-name{
+    font-size: 15px;
+    margin-bottom: 15px;
+    line-height: 22.5px;
+    
+}
+
+#content .member-img{
+    width: 154px;
+    /* margin-bottom: 112px; */
+    border-radius: 4px;
+}
+
+#content .tour-section{
+    background-color: #000;
+    height: auto;
+}
+
+#content .list-ticket{
+    background-color: #fff;
+    font-size: 15px;
+    list-style-type: none;
+    margin-top: 40px;
+    line-height: 1.4;
+}
+
+#content .list-ticket li{
+    padding: 9px 16px;
+    color: rgb(117, 117, 117); 
+    border-bottom: 1px rgb(221, 221, 221) solid;
+    
+    
+}
+
+.list-ticket .sold-out{
+    padding: 3px 8px;
+    margin-left: 16px;
+    background-color: rgb(244, 67, 54);
+    color: #fff;
+    
+}
+
+.list-ticket .quality{
+    float: right;
+    padding: 0 8px;
+    margin-right: 16px;
+    border-radius: 50%;
+    background-color: #000;
+    color: #fff;
+    line-height: 1.6;
+    margin-bottom: 3px;
+}
+
+#content .places-list{
+    margin-top: 16px;
+    
+}
+
+#content .place-img{
+    width: 100%;
+    display: block; 
+}
+
+.place-img:hover{
+    opacity: 0.6;
+}
+#content .info-tour{
+    background-color: #fff ;
+    font-size: 15px;
+    line-height: 1.4;
+    padding: 0.1px 16px;
+}
+
+#content .place-name{
+    font-size: 15px;
+    font-weight: 700;
+    margin: 15px 0;
+}
+
+#content .time-tour{
+    margin: 15px 0;
+    opacity: 0.6;
+    
+}
+
+#content .text-tour{
+    margin: 15px 0;
+    
+}
+
+#content .buy-ticket{
+    text-decoration: none;
+    padding: 8px 16px;
+    margin-bottom: 16px;
+    background-color: #000;
+    color: #fff;
+    display: inline-block;
+}
+
+#content .buy-ticket:hover{
+    background-color: #ccc;
+    color: #000;
+}
+
+#content .contact-section{
+    padding: 32px 0 0;
+}
+
+
+/* contact from */
+
+.contact-section{
+    margin-top: 48px;
+    line-height: 1.5;
+
+}
+
+.contact-info i[class*="ti-"]{
+    width: 30px;
+    display: inline-block;
+}
+
+.contact-info a{
+    color: #101aef;
+    opacity: 0.8;
+}
+
+.contact-info a:hover{
+    opacity: 1;
+}
+
+.contact-info{
+    font-size: 18px;
+}
+
+.contact-form {
+    font-size: 15px;
+}
+
+.contact-form .form-control{
+    padding: 11px;
+    border: 1px solid #ccc;
+    width: 100%;
+}
+
+.submit-btn{
+    float: right;
+    padding: 10px 15px;
+    font-size: 15px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    -webkit-appearance: none;
+}
+
+.submit-btn:hover{
+    background-color: #ccc;
+    color: #000;
+    cursor: pointer;
+}
+
+.map-section img{
+    width: 100%;
+    
+}
+
+#footer{
+    padding: 64px 16px;
+    text-align: center;
+    color: rgba(0,0,0,0.6);
+
+}
+#footer .social-list a{
+    text-decoration: none;
+    font-size: 24px;
+    padding: 0 2px;
+    color: rgba(0,0,0,0.6);
+}
+
+#footer .social-list a:hover,
+#footer .copyright a:hover{
+    color: rgba(0,0,0,0.4);
+}
+
+
+#footer .copyright{
+    color: rgba(0,0,0,0.6);
+    margin: 15px 0;
+       
+}
+
+#footer .copyright a{
+    color: rgba(0,0,0,0.6);
+    
+}

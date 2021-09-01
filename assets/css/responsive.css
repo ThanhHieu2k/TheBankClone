@@ -1,0 +1,119 @@
+/* reponsive PC */
+@media (min-width: 1024px){
+
+}
+
+
+
+
+/* reponsive tablet */
+@media(min-width: 740px) and (max-width: 1023px){
+
+}
+
+/* tablet and mobile */
+@media( max-width:1023px){
+
+    #nav .subnav a{
+        padding: 5px 12px;
+    }
+
+
+    #content .buy-ticket{
+        padding: 14px 16px;
+    }
+
+    .contact-info{
+        line-height: 2;
+    }
+    .contact-form .form-control{
+        padding:15px;
+        font-size: 16px;
+    }
+
+    .contact-section .submit-btn{
+        font-size: 17px;
+    }
+
+    #footer .social-list a{
+        font-size: 32px;
+        padding: 3px;
+        margin: 0 4px;
+
+    }
+
+    #footer .copyright a{
+        padding: 12px 0;
+        display: inline-block;
+        
+    }
+
+    #footer .copyright{
+        font-size: 20px;
+    }
+
+    
+
+       
+}
+
+/* responsive Mobile */
+@media(max-width: 739px){
+    .s-full-width,
+    .s-col-full{
+        width: 100% !important;
+    }
+    .s-mt-8{
+        margin-top: 8px !important;
+    }
+
+    #header{
+        
+        overflow: hidden;
+    }
+    
+    #nav{
+        display: block;
+    }
+    #nav >li {
+        display: block;        
+    }
+
+    #nav>li a{
+        padding-top: 1px;
+        padding-bottom: 1px;
+    }
+
+    #nav .subnav{
+        position: initial ;
+        background-color: #333;
+    }
+
+    #nav .subnav a{
+        color: #fff;
+        padding: 5px 42px;
+    }
+
+    #header .search-btn{
+        display: none;
+    }
+    #header .mobile-menu-btn{
+        display: block;
+    }
+
+    #content .member-img{
+        width: 60%;
+        margin-bottom: 15px;
+       
+    }
+    #content .contact-section{
+        padding-top: 0px;
+    }
+    .contact-form {
+        margin-top: 32px;
+
+    }
+    .contact-section .submit-btn{
+        padding: 12px 0;
+    }
+}
